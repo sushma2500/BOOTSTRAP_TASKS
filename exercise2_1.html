@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 2.1 - Bootstrap Directory Structure</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-4">
+  <div class="container">
+    <h2 class="mb-4">Bootstrap Directory Structure</h2>
+    <table class="table table-bordered table-hover">
+      <thead class="table-dark">
+        <tr><th>Folder/File</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>css/bootstrap.min.css</code></td><td>Minified Bootstrap styles – link in &lt;head&gt;</td></tr>
+        <tr><td><code>css/bootstrap.css</code></td><td>Full (unminified) Bootstrap CSS for debugging</td></tr>
+        <tr><td><code>js/bootstrap.bundle.min.js</code></td><td>Minified JS + Popper.js bundled – link before &lt;/body&gt;</td></tr>
+        <tr><td><code>js/bootstrap.min.js</code></td><td>Minified JS only (requires separate Popper.js)</td></tr>
+        <tr><td><code>icons/</code></td><td>Bootstrap Icons SVG files (if downloaded separately)</td></tr>
+      </tbody>
+    </table>
+    <div class="alert alert-warning mt-3">
+      <strong>Note:</strong> Always use <code>bootstrap.bundle.min.js</code> to include Popper.js automatically for tooltips and dropdowns.
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
